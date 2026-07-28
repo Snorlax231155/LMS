@@ -1,0 +1,53 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Dotnet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# EF Migrations (optional to ignore if you will commit them)
+# Migrations/
+
+# Test results
+TestResults/
+
+# Logs
+logs/
+
+# Publish output
+publish/
+
+# NuGet
+*.nupkg
+packages/
+
+# JetBrains Rider
+.idea/
+
+# Backup files
+*~
+*.backup
+
+# Database
+*.mdf
+*.ldf
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user

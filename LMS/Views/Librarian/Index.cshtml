@@ -1,0 +1,30 @@
+@model IEnumerable<LMS.Models.LibrarianModel>
+@{
+    ViewData["Title"] = "Librarians";
+}
+<a class="btn btn-primary mb-3" asp-action="Create">Add New Librarian</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>LibrarianId</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var item in Model) {
+        <tr>
+            <td>@item.LibrarianId</td>
+            <td>@item.Name</td>
+            <td>@item.Age</td>
+            <td>@item.Phone</td>
+            <td>
+                <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@item.LibrarianId">Edit</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.LibrarianId">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+@model LMS.ViewModels.ReturnViewModel
+@{
+    ViewData["Title"] = "Return Book";
+}
+<h2>Return: @Model.BookTitle</h2>
+<div>
+    <p><strong>Borrower:</strong> @Model.BorrowerName</p>
+    <p><strong>Borrowed At:</strong> @Model.BorrowDate?.ToString("yyyy-MM-dd HH:mm")</p>
+</div>
+<form asp-action="Return" method="post">
+    <input type="hidden" asp-for="BorrowRecordId" />
+    <button type="submit" class="btn btn-success">Confirm Return</button>
+    <a asp-action="Index" asp-controller="Books" class="btn btn-secondary">Cancel</a>
+</form>

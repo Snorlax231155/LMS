@@ -1,0 +1,17 @@
+@model LMS.Models.Book
+@{
+    ViewData["Title"] = "Book Details";
+}
+<h2>@Model.Title</h2>
+<dl class="row">
+    <dt class="col-sm-3">Author</dt>
+    <dd class="col-sm-9">@Model.Author</dd>
+    <dt class="col-sm-3">ISBN</dt>
+    <dd class="col-sm-9">@Model.ISBN</dd>
+    <dt class="col-sm-3">Published</dt>
+    <dd class="col-sm-9">@Model.PublishedDate.ToString("yyyy-MM-dd")</dd>
+    <dt class="col-sm-3">Available</dt>
+    <dd class="col-sm-9">@(Model.IsAvailable ? "Yes" : "No")</dd>
+</dl>
+<a asp-action="Edit" asp-route-id="@Model.BookId" class="btn btn-warning">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

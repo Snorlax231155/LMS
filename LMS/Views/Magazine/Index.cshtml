@@ -1,0 +1,27 @@
+@model IEnumerable<LMS.Models.Magazine>
+@{
+    ViewData["Title"] = "Magazines";
+}
+
+<h2>Magazines</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Publisher</th>
+            <th>Issue Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Publisher</td>
+            <td>@item.IssueDate.ToShortDateString()</td>
+            <td><a asp-action="Details" asp-route-id="@item.MagazineId" class="btn btn-sm btn-primary">Details</a></td>
+        </tr>
+    }
+    </tbody>
+</table>

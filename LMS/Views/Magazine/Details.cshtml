@@ -1,0 +1,11 @@
+@model LMS.Models.Magazine
+@{
+    ViewData["Title"] = "Magazine Details";
+}
+
+<h2>@Model.Title</h2>
+<div class="card p-3">
+    <p><strong>Publisher:</strong> @Model.Publisher</p>
+    <p><strong>Issue Date:</strong> @Model.IssueDate.ToShortDateString()</p>
+</div>
+<a asp-action="Index" class="btn btn-secondary mt-2">Back</a>
