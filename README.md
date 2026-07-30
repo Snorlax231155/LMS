@@ -1,8 +1,16 @@
 # Library Management System (LMS)
 
-A modern, robust web application built using **ASP.NET Core (Razor MVC)** on **.NET 10.0** and **Entity Framework Core**. The application is designed to digitize and automate core library workflows, including books inventory cataloging, student and librarian member records, and loan transactions (borrowing and returning books).
+A modern, robust web application built using **ASP.NET Core (MVC)** on **.NET 10.0** and **Entity Framework Core**. The application is designed to digitize and automate core library workflows, including books inventory cataloging, student and librarian member records, and loan transactions (borrowing and returning books).
 
 ---
+
+## 👤 Student Info
+- **Name: Abhilash Choudhary**
+- **Reg No.: 23BCE11155**
+- **Application No.: IN26012658**
+
+---
+
 
 ## 🚀 Key Features
 
@@ -90,5 +98,4 @@ dotnet test TestProject1/TestProject1.csproj
 
 ---
 
-## 👤 Developer
-- **Abhilash Choudhary** (Capstone Student)
+## Screenshots
