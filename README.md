@@ -99,3 +99,6 @@ dotnet test TestProject1/TestProject1.csproj
 ---
 
 ## Screenshots
+| Home screen | Books section |
+|--------------|--------------|
+| ![](Screenshots/home.PNG) | ![](Screenshots/books.PNG) |
